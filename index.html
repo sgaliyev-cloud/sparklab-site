@@ -8,6 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+  .faq-list{ border-top:1px solid var(--line-soft); max-width:860px; }
+  .faq-i{ border-bottom:1px solid var(--line-soft); padding:18px 4px; }
+  .faq-i summary{ cursor:pointer; font-family:var(--font-display); font-size:22px; letter-spacing:.01em; list-style:none; display:flex; justify-content:space-between; gap:16px; }
+  .faq-i summary::-webkit-details-marker{ display:none; }
+  .faq-i summary::after{ content:"+"; color:var(--ember); font-size:26px; line-height:1; }
+  .faq-i[open] summary::after{ content:"–"; }
+  .faq-i p{ margin:12px 0 0; color:var(--text-on-ink-dim); font-size:15.5px; line-height:1.6; max-width:70ch; }
+
   @media (max-width:900px){ #process .sheet{ grid-template-columns:repeat(2,1fr) !important; } }
   @media (max-width:560px){ #process .sheet{ grid-template-columns:1fr !important; } }
   :root{
@@ -768,6 +776,21 @@
           <p style="margin-top:10px;">Выстраивает сотрудничество с брендами и компаниями, проводит переговоры, согласовывает условия проектов и сопровождает сделки до заключения договора.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="faq" class="wrap">
+    <div class="section-head">
+      <div class="k-label">// FAQ</div>
+      <h2 class="h-title">Частые вопросы</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-i"><summary>Что входит в стоимость?</summary><p>В пакеты входят сценарий, съёмка, монтаж, звуковое оформление и motion-графика. Отдельно оплачивается участие актёров и ведущих. Итоговую стоимость фиксируем в предложении после короткого брифа: она зависит от сложности роликов.</p></details>
+      <details class="faq-i"><summary>Как согласовываются правки?</summary><p>После первой версии ролика вносим один согласованный список правок. Дополнительные правки обсуждаются и оплачиваются отдельно.</p></details>
+      <details class="faq-i"><summary>Можно ли заказать один ролик?</summary><p>Да. Стоимость одного ролика рассчитывается индивидуально и выше, чем в пакете: пакет выгоднее за счёт объёма. Напишите нам, и мы назовём цену под вашу задачу.</p></details>
+      <details class="faq-i"><summary>Работаете ли вы за пределами Алматы?</summary><p>Да. Если съёмка проходит далеко от города, возможна доплата за выезд оператора, её согласуем заранее.</p></details>
+      <details class="faq-i"><summary>Можно ли заказать только монтаж?</summary><p>Да, монтаж можно заказать отдельно. Стоимость считается индивидуально, по объёму и сложности материала.</p></details>
+      <details class="faq-i"><summary>Как проходит работа?</summary><p>Обсуждаем задачу и бюджет, согласовываем предложение и сценарий, организуем съёмку и монтаж, передаём готовые материалы.</p></details>
     </div>
   </section>
 
